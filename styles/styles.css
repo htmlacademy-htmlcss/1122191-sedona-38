@@ -29,6 +29,17 @@ body {
   background-color: #f2f2f2;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* page-header */
 .page-container {
   display: flex;
@@ -42,6 +53,7 @@ body {
 
 .page-header {
   background-color: #ffffff;
+  width: 1200px;
 }
 
 .navigation {
@@ -51,19 +63,34 @@ body {
 }
 
 .navigation-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   width: 460px;
   padding: 0;
   margin: 0;
+  list-style-type: none;
+}
+
+.navigation-logo {
+  display: block;
+  width: 140px;
+  margin-right: 30px;
+  margin-bottom: -6px;
 }
 
 .navigation-user {
-  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
   max-width: 268px;
+  padding: 0;
   margin-left: auto;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
+  font-family: inherit;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -71,6 +98,15 @@ body {
   text-decoration: none;
   text-align: center;
   text-transform: capitalize;
+}
+
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.navigation-link-current {
+
 }
 
 .navigation-link-button {
@@ -95,6 +131,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  margin-bottom: 69px;
 }
 
 .logo-hero {
