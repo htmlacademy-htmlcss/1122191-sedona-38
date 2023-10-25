@@ -516,6 +516,7 @@ body {
 .filter-container {
   display: flex;
 }
+
 .catalog-filter-group {
   border-color: rgba(255, 255, 255, 0);
   padding: 0;
@@ -544,6 +545,12 @@ body {
   line-height: 23px;
 }
 
+.container-button {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
 .button-filter {
   font-family: inherit;
   color: #ffffff;
@@ -554,13 +561,13 @@ body {
   text-transform: uppercase;
   width: 191px;
   height: 36px;
-  padding: 0 50px;
 }
 
 .button-apply {
   background-color: #82b3d3;
   border-color: rgba(255, 255, 255, 0);
   border-radius: 4px;
+  margin-bottom: 32px;
 }
 
 .button-reset {
@@ -668,8 +675,8 @@ body {
 .product-card {
   margin: 0;
   padding: 0;
-  width: 340px;
-  padding: 20px;
+  width: 300px;
+  padding: 19px;
   display: grid;
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: 212px 1fr;
@@ -690,6 +697,7 @@ body {
   margin: 0;
   grid-column: span 2;
 }
+
 .product-card-image {
   display: block;
 }
