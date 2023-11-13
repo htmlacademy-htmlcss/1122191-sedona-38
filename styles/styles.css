@@ -281,7 +281,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-top: 21px;
   list-style-type: none;
 }
 
@@ -378,7 +377,7 @@ body {
 .services-title {
   margin: 0;
   padding: 0;
-  margin-top: 64px;
+  padding-top: 64px;
   margin-bottom: 20px;
   color: #000000;
   text-align: center;
