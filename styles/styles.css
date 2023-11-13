@@ -1137,7 +1137,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  padding: 50px 70px 55px;
+  padding: 50px 70px 60px;
 }
 
 .select-wrapper {
@@ -1385,6 +1385,7 @@ body {
 }
 
 .product-card-rating {
+  display: inline-block;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -1424,14 +1425,7 @@ body {
   padding: 0;
   padding-top: 40px;
   margin: 0;
-}
-
-.pagination-item {
-  margin-bottom: 5px;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
+  gap: 8px;
 }
 
 .pagination-link {
